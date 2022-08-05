@@ -101,11 +101,11 @@ body ::-webkit-scrollbar-thumb {
   font-size: 12px;
   background-color: #1f2235;
 }
-/* @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   .primary-btn {
     font-size: 13px;
   }
-} */
+}
 
 .primary-btn:hover {
   color: aliceblue;

@@ -5,9 +5,8 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../../assets/Home/bg.png");
+  background-image: url("../../../assets/Home/bgportfolio.png");
   background-repeat: no-repeat;
-  background-position-y: top;
 }
 .profile-parent {
   display: flex;
@@ -29,7 +28,7 @@ h1 {
   font-family: cursive;
 }
 .primary-text {
-    font-size: 30px;
+  font-size: 30px;
   color: (--white);
   font-family: cursive;
 }
@@ -41,9 +40,7 @@ h1 {
   margin: 5px 0 0 0;
   font-family: "Poppins Light";
 }
-.profile-options {
-  margin-top: 3rem;
-}
+
 .profile-options .highlighted-btn {
   margin: 0 0 0 28px;
 }
@@ -65,7 +62,7 @@ h1 {
 .profile-picture-background {
   height: 92%;
   width: 92%;
-  background-image: url("../../assets/Home/portfoliolevy.jpg");
+  background-image: url("../../../assets/Home/IMG20211003210607.jpg");
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -85,3 +82,61 @@ i {
 i:hover {
   transform: scale(1.5);
 }
+
+@media screen and (max-width: 1110px) {
+    .profile-picture{
+        margin: 0 0 0 8px;
+    }
+    .profile-details-name {
+        font-size: 20px;
+    }
+    .profile-details-role .primary-text {
+        font-size: 12px;
+    }
+    .profile-options .btn {
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .profile-picture {
+        height: 300px;
+        width: 300px;
+        margin: 0 0 0 4px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .profile-picture {
+        margin: 0 !important;
+    }
+    .profile-parent {
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-options {
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-details {
+        margin: 25px 0 0;
+    }
+    .profile-options .highlighted-btn {
+        margin: 0 !important;
+    }
+    .profile-options, .profile-details-role {
+        text-align: center;
+    } 
+}
+/* @media screen and (max-width: 3750px) {
+    .profile-picture {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    /* .profile-details {
+        width: 90%;
+    } 
+  }*/
+ 
