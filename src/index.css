@@ -99,7 +99,7 @@ body ::-webkit-scrollbar-thumb {
   color: var(--white);
   border: 2px solid linen;
   font-size: 12px;
-  background-color: #1f2235;
+  background-color: #355764;
 }
 @media only screen and (max-width: 414px) {
   .primary-btn {
@@ -109,15 +109,20 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
-  background-color: #1f2235;
+  border: 2px solid #FFEA11;
+  background-color: #355764;
 }
 
 .highlighted-btn {
-  color: var(--white);
+  color: #355764;
 
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: #FFEA11;
+}
+.highlighted-btn:hover {
+  
+  font-size: 12px;
+  background-color: var(--white);
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

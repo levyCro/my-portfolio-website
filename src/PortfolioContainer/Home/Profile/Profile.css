@@ -11,7 +11,7 @@
 .profile-parent {
   display: flex;
   align-items: center;
-  color: aliceblue;
+  color: white;
 }
 .profile-details-name {
   font-size: 24px;
@@ -33,7 +33,7 @@ h1 {
   font-family: cursive;
 }
 .highlighted-text {
-  color: var(--dark-orange);
+  color: var(--yellow);
 }
 .profile-role-tagline {
   font-size: 19px;
@@ -46,8 +46,8 @@ h1 {
 }
 .profile-options .highlighted-btn:hover {
   margin: 0 0 0 28px;
-  background-color: cornsilk;
-  color: #111;
+  background-color: white;
+  color: #355764;
 }
 .profile-picture {
   display: flex;
@@ -55,8 +55,8 @@ h1 {
   justify-content: center;
   box-shadow: 0 1px 0 0 var(--white);
   border-radius: 50%;
-  height: 380px;
-  width: 380px;
+  height: 370px;
+  width: 370px;
   margin: 0 0 0 100px;
 }
 .profile-picture-background {
@@ -74,13 +74,15 @@ h1 {
 }
 .colz .colz-icon,
 i {
-  color: white;
+  color: var(--white);
   padding: 8px;
   padding-left: 0px;
 }
 .colz .colz-icon,
 i:hover {
+  color: var(--yellow);
   transform: scale(1.5);
+  
 }
 
 @media screen and (max-width: 1110px) {
