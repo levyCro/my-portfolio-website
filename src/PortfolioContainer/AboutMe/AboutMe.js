@@ -4,8 +4,9 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
 
-// control the butten about me with smooth scroll animation
+
 export default function AboutMe(props) {
+  // control the butten about me with smooth scroll animation
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
