@@ -49,7 +49,7 @@ const  Resume = (props) => {
     { label: "Interests", logoSrc: "interests.svg" },
   ];
   // my skilss
-  const programmingSkillDetails = [
+  const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 70 },
     { skill: "React Js", ratingPercentage: 70 },
     { skill: "PHP OOP", ratingPercentage: 75 },
@@ -141,14 +141,14 @@ const  Resume = (props) => {
         className="resume-screen-container programming-skills-container"
         key="programming-skills"
       >
-        {programmingSkillDetails.map((skill, index) => (
+        {programmingSkillsDetails.map((skill, index) => (
           <div className="skill-parent" key={index}>
             <div className="heading-bullet"></div>
             <span>{skill.skill}</span>
             <div className="skill-precentage">
               <div
                 style={{ width: skill.ratingPercentage + "%" }}
-                className="active-percentage"
+                className="active-percentage-bar"
               ></div>
             </div>
           </div>
