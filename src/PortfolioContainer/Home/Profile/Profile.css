@@ -5,13 +5,11 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../../../assets/Home/bgportfolio.png");
-  background-repeat: no-repeat;
 }
 .profile-parent {
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--white);
 }
 .profile-details-name {
   font-size: 24px;
