@@ -7,11 +7,10 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
-import lady from "../../../src/img/Testimonial/lady.png"
-import mike from "../../../src/img/Testimonial/mike.png"
+import lady from "../../../src/img/Testimonial/lady.png";
+import mike from "../../../src/img/Testimonial/mike.png";
 import man from "../../../src/img/Testimonial/man.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
-
 
 export default function Testimonial(props) {
   // control the butten about me with smooth scroll animation
@@ -66,7 +65,7 @@ export default function Testimonial(props) {
                       <i className="fa fa-quote-left" />
                       I patronized Levy and when He delivered, I honestly fell
                       in love with the project He is a very honest guy and he
-                      delivers ontime. 
+                      delivers ontime.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -80,18 +79,12 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
                         <i className="fa fa-star" />
                       </li>
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img
-                      src={lady}
-                      alt="no internet conection"
-                    />
+                    <img src={lady} alt="no internet conection" />
                     <h5>Malena Gold</h5>
                     <p>CEO InansGlobal</p>
                   </div>
@@ -118,18 +111,12 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
                         <i className="fa fa-star" />
                       </li>
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img
-                      src={mike}
-                      alt="no internet conection"
-                    />
+                    <img src={mike} alt="no internet conection" />
                     <h5>Mike Brown</h5>
                     <p>CEO Macdonalds</p>
                   </div>
@@ -156,18 +143,12 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
                         <i className="fa fa-star" />
                       </li>
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img
-                      src={lady}
-                      alt="no internet conection"
-                    />
+                    <img src={lady} alt="no internet conection" />
                     <h5>Jane Wilson</h5>
                     <p>KMO BeCars</p>
                   </div>
@@ -194,18 +175,12 @@ export default function Testimonial(props) {
                         <i className="fa fa-star" />
                       </li>
                       <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
                         <i className="fa fa-star" />
                       </li>
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img
-                      src={man}
-                      alt="no internet conection"
-                    />
+                    <img src={man} alt="no internet conection" />
                     <h5>Bob Clark</h5>
                     <p>CEO Decatlon</p>
                   </div>
@@ -216,7 +191,7 @@ export default function Testimonial(props) {
         </div>
       </section>
       <div className="footer-image">
-        <img src={shape} alt="no internet"/>
+        <img src={shape} alt="no internet" />
       </div>
     </div>
   );
