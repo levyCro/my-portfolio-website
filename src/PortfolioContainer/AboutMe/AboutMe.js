@@ -8,7 +8,7 @@ import "./AboutMe.css";
 export default function AboutMe(props) {
   // control the butten about me with smooth scroll animation
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -39,7 +39,7 @@ export default function AboutMe(props) {
   };
 
   return (
-    <div className="about-me-container" id={props.id || ""}>
+    <div className="about-me-container fade-in" id={props.id || ""}>
       <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Why Choose Me"} />
         <div className="about-me-card">
@@ -55,7 +55,13 @@ export default function AboutMe(props) {
               {renderHighlights()}
             </div>
             <div className="about-me-options">
-              <button className="btn primary-btn"> Hire Me</button>
+              <button
+                className="btn primary-btn"
+                onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              >
+                {" "}
+                Hire Me
+              </button>
               <a href="levycvtest.pdf" download="Levy levycvtest.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>

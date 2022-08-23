@@ -73,9 +73,7 @@
     .selected-header-option{
         color: var(--white);
     }
-    .header-option{
-        color: var(--white);
-    }
+    
     .header-hamburger-bars{
         font-size: 35px;
         cursor: pointer;

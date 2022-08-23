@@ -10,7 +10,7 @@ const  Resume = (props) => {
   const [carouselOffSetStyle, setCarouselOffSetStyle] = useState({});
 
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
   };
@@ -226,7 +226,7 @@ const  Resume = (props) => {
   };
 
   return (
-    <div className="resume-container screen-container" id={props.id || ""}>
+    <div className="resume-container screen-container fade-in" id={props.id || ""}>
       <div className="resume-content">
         <ScreenHeading title={"Resume"} subHeading={"My Formal Bio Details"} />
         <div className="resume-card">

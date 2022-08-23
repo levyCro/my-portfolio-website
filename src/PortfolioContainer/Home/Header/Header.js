@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TOTAL_SCREENS,
   GET_SCREEN_INDEX,
@@ -18,9 +18,8 @@ export default function Header() {
     let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
     if (screenIndex < 0) return;
   };
-//   let currentScreenSubscription =
-//     ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
-
+  let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
+  
   const getHeaderOptions = () => {
     return TOTAL_SCREENS.map((Screen, i) => (
       <div
@@ -51,11 +50,11 @@ export default function Header() {
     setShowHeaderOptions(false);
   };
 
-//   useEffect(() => {
-//     return () => {
-//       currentScreenSubscription.unsubscribe();
-//     };
-//   }, [currentScreenSubscription]);
+  useEffect(() => {
+    return () => {
+      currentScreenSubscription.unsubscribe();
+    };
+  }, [currentScreenSubscription]);
 
   return (
     <div
